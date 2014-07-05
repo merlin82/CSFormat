@@ -19,7 +19,8 @@ Usage
 	using namespace std;
 	int main()
 	{
-		cout << CSFormat("{0}|{1}|{2}", 11, "aaa", 3.14) << endl;
+		string demo = CSFormat("{0,20}|{1,-10}|{2}|{3,30:T}|", 11, "aaa", 3.14, time(NULL));
+		cout << demo << endl;
 		return 0;
 	}
 	
