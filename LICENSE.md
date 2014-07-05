@@ -1,3 +1,6 @@
+CSFormat is available for use under the following license
+
+==============================
 The MIT License (MIT)
 
 Copyright (c) 2014 merlin fang

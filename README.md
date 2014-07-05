@@ -16,6 +16,7 @@ Usage
 	#include "FormatString.h"
 	#include <string>
 	#include <iostream>
+	#include <time.h>
 	using namespace std;
 	int main()
 	{
