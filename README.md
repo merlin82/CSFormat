@@ -30,3 +30,27 @@ need c++ 11 support
 
 Extension
 ========
+### (1) overload operator << 
+	friend ostream& operator << (ostream& fout,MyType& a);
+
+### (2)define new format class
+	//a example of extension
+	template <>
+	class CArg<time_t> : public CArgBase
+	{
+	public:
+		CArg(time_t arg) : _arg(arg) {}
+		virtual void format(std::ostringstream &ss, const std::string& fmt)
+		{
+			if (fmt[0] == 'T')
+			{
+				_formatTime(ss, _arg);
+			}
+			else
+			{
+				ss << _arg;
+			}
+		}
+	private:
+		time_t _arg;
+	};
