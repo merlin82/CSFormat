@@ -10,10 +10,6 @@ CSFormat will offer an alternative that can be used from native C++ code.
 Usage
 ========
 ### Have a look at demo.cpp.
-#include "FormatString.h"
-#include <string>
-#include <iostream>
-using namespace std;
 int main()
 {
   cout << CSFormat("{0}|{1}|{2}", 11, "aaa", 3.14) << endl;
